@@ -5,16 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas, Listas, iFrame</title>
 </head>
+
+<!-- Para mesclar células podemos utilizar o atributo da célula (tag td)
+colspan para definir o número de colunas que ela ocupará
+ou o atributo rowspan para definir o número de linhas.
+ex: <td colspan="2">Carlos</td> 
+<td rowspan="2">Carlos</td>
+Além disso, é possível definir um rótulo a aparecer no
+topo da tabela, especificando uma tag
+caption logo após abrir a tag table
+<caption>Resultado 1º Bimestre</caption>-->
+
 <body>
-    <table border="1">
+    <table border="1"> 
+        <caption>Resultado 1º Bimestre</caption>
         <tr>
-            <td>Aluno</td><td>Nota</td>
+            <td colspan="4">Resultados</td>
         </tr>
         <tr>
-            <td>Carlos</td><td>10,0</td>
+            <td>Aluno</td><td>Situação</td><td>Nota1</td><td>Nota2</td>
         </tr>
         <tr>
-            <td>Maria</td><td>10,0</td>
+            <td>Alan</td><td>Matriculado</td><td>9,0</td><td>8,0</td>
+        </tr>
+        <tr>
+            <td>Bruna</td><td>Matriculado</td><td>8,5</td><td>9,5</td>
+        </tr>
+        <tr>
+            <td>Carlos</td><td colspan="3">Trancado</td>
         </tr>
     </table>
 </body>
